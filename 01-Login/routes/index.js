@@ -7,11 +7,13 @@ router.get('/', function(req, res, next) {
   res.render('index');
 });
 
-router.get('/login', passport.authenticate('auth0', {
-  scope: 'openid email profile'}),
+router.get('/login', passport.authenticate('citizenone', {
+    scope: 'offline',
+    state: Math.random().toString(36)
+  }),
   function(req, res) {
     res.redirect("/");
-});
+  });
 
 router.get('/logout', function(req, res) {
   req.logout();
@@ -19,7 +21,7 @@ router.get('/logout', function(req, res) {
 });
 
 router.get('/callback',
-  passport.authenticate('auth0', {
+  passport.authenticate('citizenone', {
     failureRedirect: '/failure'
   }),
   function(req, res) {

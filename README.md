@@ -1,38 +1,38 @@
-# Auth0 Node Web App Samples
+# CitizenOne Node Web App Samples
 
-[![CircleCI](https://circleci.com/gh/auth0-samples/auth0-nodejs-webapp-sample.svg?style=svg)](https://circleci.com/gh/auth0-samples/auth0-nodejs-webapp-sample)
+These samples demonstrate how to add authentication to a Node.js application with CitizenOne. Each folder contains a distinct application so that various CitizenOne features can be viewed in isolation.
 
-These samples demonstrate how to add authentication to a Node.js application with Auth0. Each folder contains a distinct application so that various Auth0 features can be viewed in isolation.
+## What is CitizenOne?
 
-## Embedded Integration Samples
+CitizenOne is comprised of a series of modules and is available in a variety of licensing models to meet a wide range of deployment preferences. CitizenOne provides you with:
 
-These samples use Auth0's [hosted login page](https://auth0.com/docs/hosted-pages/login) which offers the fastest, most secure, and most feature-rich way to add authentication to your app.
+ * [Citizen Identity and Access Management](https://www.vivvo.com/citizen-identity-and-access-management/)
+    * Creates a single profile managed by the citizen that can be used across all connected government services.
 
-For samples which demonstrate how to embed the Lock widget or a custom login form directly into your application, see the [embedded-login](https://github.com/auth0-samples/auth0-nodejs-webapp-sample/tree/embedded-login) branch.
+ * [Identity Relationship Management](https://www.vivvo.com/identity-relationship-management/)
+    * Connects the citizen profile to roles they may play in their daily lives (business owner, parent), allowing a citizen to do more from one profile.
 
-## What is Auth0?
+ * [Secure Messaging Broker](https://www.vivvo.com/secure-messaging-broker/)
+    * A two-way messaging centre allowing the citizen to receive updates with the ability to manage notification preferences (Email, SMS).
 
-Auth0 helps you to:
+ * [Trust Framework](https://www.vivvo.com/trust-framework/)
+    * Deliver sensitive services digitally with a higher level of confidence by confirming a user is who they say they are by connecting to multiple data sources (e.g. drivers license, Equifax, Corporate Registries, 3rd party providers).
 
-* Add authentication with [multiple authentication sources](https://docs.auth0.com/identityproviders), either social like **Google, Facebook, Microsoft Account, LinkedIn, GitHub, Twitter, Box, Salesforce, amont others**, or enterprise identity systems like **Windows Azure AD, Google Apps, Active Directory, ADFS or any SAML Identity Provider**.
-* Add authentication through more traditional **[username/password databases](https://docs.auth0.com/mysql-connection-tutorial)**.
-* Add support for **[linking different user accounts](https://docs.auth0.com/link-accounts)** with the same user.
-* Support for generating signed [Json Web Tokens](https://docs.auth0.com/jwt) to call your APIs and **flow the user identity** securely.
-* Analytics of how, when and where users are logging in.
-* Pull data from other sources and add it to the user profile, through [JavaScript rules](https://docs.auth0.com/rules).
+ * [Privacy and Consent Firewall](https://www.vivvo.com/privacy-and-consent-firewall/)
+    * Connects the citizen to any set of digital services and presents policy to the citizen that they must agree to access the service, allows the citizen to manage consents on an ongoing basis.
 
-## Create a free Auth0 account
+ * [Service Card Module](https://www.vivvo.com/service-card-module/)
+    * “Digital Service Cards” (Service Cards) are a usability and service delivery component of CitizenOne delivered through this module.
 
-1. Go to [Auth0](https://auth0.com/signup) and click Sign Up.
-2. Use Google, GitHub or Microsoft Account to login.
+ * [Payment Broker](https://www.vivvo.com/payment-broker/)
+    * Provides a simplified payment interaction by securely and privately presenting invoices and brokering the payment transaction.
 
-## Issue Reporting
-
-If you have found a bug or if you have a feature request, please report them at this repository issues section. Please do not report security vulnerabilities on the public GitHub issue tracker. The [Responsible Disclosure Program](https://auth0.com/whitehat) details the procedure for disclosing security issues.
+ * [Reporting and Admin](https://www.vivvo.com/payment-broker/)
+    * Provides government administrators with a real-time dashboard that describes the number of users, services being consumed, trends and allows access to manage CitizenOne.
 
 ## Author
 
-[Auth0](auth0.com)
+[Vivvo Application Studios](www.vivvo.com)
 
 ## License
 

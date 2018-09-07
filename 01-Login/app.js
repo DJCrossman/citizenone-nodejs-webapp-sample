@@ -7,7 +7,7 @@ const bodyParser = require('body-parser');
 const session = require('express-session');
 const dotenv = require('dotenv');
 const passport = require('passport');
-const Auth0Strategy = require('passport-auth0');
+const Strategy = require('@vivvo/passport-citizenone');
 const flash = require('connect-flash');
 
 dotenv.load();
@@ -15,17 +15,17 @@ dotenv.load();
 const routes = require('./routes/index');
 const user = require('./routes/user');
 
-// This will configure Passport to use Auth0
-const strategy = new Auth0Strategy(
+// This will configure Passport to use CitizenOne
+const strategy = new Strategy(
   {
-    domain: process.env.AUTH0_DOMAIN,
-    clientID: process.env.AUTH0_CLIENT_ID,
-    clientSecret: process.env.AUTH0_CLIENT_SECRET,
+    domain: process.env.CITIZENONE_DOMAIN,
+    clientID: process.env.CITIZENONE_CLIENT_ID,
+    clientSecret: process.env.CITIZENONE_CLIENT_SECRET,
     callbackURL:
-      process.env.AUTH0_CALLBACK_URL || 'http://localhost:3000/callback'
+      process.env.CITIZENONE_CALLBACK_URL || 'http://localhost:3000/callback'
   },
   function(accessToken, refreshToken, extraParams, profile, done) {
-    // accessToken is the token to call Auth0 API (not needed in the most cases)
+    // accessToken is the token to call CitizenOne API
     // extraParams.id_token has the JSON Web Token
     // profile has all the information from the user
     return done(null, profile);
