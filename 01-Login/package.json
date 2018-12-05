@@ -1,6 +1,6 @@
 {
   "name": "citizenone-nodejs-regular-webapp-sample",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "CitizenOne + NodeJS Regular WebApp seed",
   "repository": "git://github.com/Vivvo/citizenone-nodejs-webapp-sample",
   "author": "Vivvo Application Studios",
@@ -9,7 +9,7 @@
     "start": "node ./bin/www"
   },
   "dependencies": {
-    "@vivvo/passport-citizenone": "^0.1.1",
+    "@vivvo/passport-citizenone": "^0.2.0",
     "body-parser": "^1.16.1",
     "connect-ensure-login": "^0.1.1",
     "connect-flash": "^0.1.1",
